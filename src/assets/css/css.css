@@ -6,8 +6,9 @@ html{-webkit-filter: grayscale(100%);-moz-filter: grayscale(100%);-ms-filter: gr
 
 @font-face{
     font-family: '华文行楷';
-    src : url('http://test.eatrice.top/font/华文行楷.ttf'),
-    url('http://test.eatrice.top/font/华文行楷.woff');
+    src : url('https://test.eatrice.top/font/华文行楷.ttf'),
+    url('https://test.eatrice.top/font/华文行楷.svg'),
+    url('https://test.eatrice.top/font/华文行楷.woff');
 }
 
 body{
@@ -76,7 +77,7 @@ a{
 /******首页轮播************/
 
 
-#main {overflow: hidden; zoom: 1; position: relative; }
+#main {zoom: 1; position: relative; }
 #index_b_hero { width: 100%; height: auto; margin: auto; position: relative; }
 /* #index_b_hero img { width: 1000px; height: 380px; } */
 #index_b_hero .heros { width: 1000px; height: 380px; }
