@@ -1,0 +1,109 @@
+.wz {
+  margin-top: 2rem !important;
+  color: #4472c4 !important;
+  font-weight: bold;
+  font-size: normal;
+}
+.wz a {
+  border: 1.5px solid #4472c4;
+  font-weight: bold;
+  padding: 0px 12px 0px 12px !important;
+  display: inline-block;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.left .left-t {
+  width: 100%;
+  font-weight: bold;
+  margin-top: 3rem;
+}
+
+.content-bg {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50rem;
+  display: inline-block;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.vsb_content {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.vsb_content p {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.left-c {
+  overflow: hidden;
+}
+.left-c a {
+  text-align: center;
+  transition: all 0.5s;
+  display: block;
+  border-bottom: 3px solid #eee;
+  color: #666666;
+  font-size: 16px;
+  height: 44px;
+  line-height: 42px;
+  background: url(../images/left-c.jpg) 184px 15px no-repeat;
+}
+.left-c a:hover,
+.left-c a.on {
+  height: 43px;
+  font-size: x-large;
+  border-bottom: 3px solid #0b4ea7;
+  color: #0b4ea7;
+  background: url(../images/left-c2.jpg) 184px 15px no-repeat;
+}
+
+.right-c a{
+  transition: all 0.5s;
+  display: block;
+  border-bottom: 3px solid #eee;
+  color: #666666;
+  font-size: 16px;
+  height: 44px;
+  line-height: 42px;
+  background: url(../images/left-c.jpg) 184px 15px no-repeat;
+}
+
+.right-c a:hover,
+.right-c a.on {
+  height: 56px;
+  padding-top: 12px;
+  font-size: x-large;
+  border-bottom: 3px solid #0b4ea7;
+  color: #0b4ea7;
+  background: url(../images/left-c2.jpg) 184px 15px no-repeat;
+}
+
+.right-c li{
+  border: none !important;
+  height: auto !important;
+  transition: .5s;
+}
+
+#fanye49428{
+  color: #aaa !important;
+  font-size: 12px !important;
+  margin-top: 1.2rem;
+}
+.headStyle4yaruiz0br span{
+  width: 32px ;
+  font-size: 12px !important;
+  text-align: center;
+  padding: 1px 2px 1px 2px !important;
+}
+
+td span, input, a {
+  height: auto !important;
+  font: 12px !important;
+}
+
+tbody{
+  margin-bottom: 3rem !important;
+  padding-left: 3rem !important;
+}
