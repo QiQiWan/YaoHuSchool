@@ -50,17 +50,18 @@ $(function () {
                 main(0);
             }
         });
+        //5秒钟切换一次幻灯片
         clearInterval(timer);
         timer = setInterval(function () {
             main(0);
-        }, 20000000);
+        }, 5000);
         _that.hover(function () {
             clearInterval(timer);
         }, function () {
             clearInterval(timer);
             timer = setInterval(function () {
                 main(0);
-            }, 20000000);
+            }, 5000);
         })
         function main(fx) {
             if (fx) {

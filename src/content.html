@@ -7,8 +7,6 @@
     <meta name="description"
         content="南昌工程学院瑶湖学院成立于2014年8月，校长金志农亲自兼任院长，实行教 授治教。瑶湖学院设于教学南大楼五楼，内部环境雅致、温馨，营造出“现代、 开放”的浓郁氛围。" />
     <meta name="keywords" content="瑶湖学院 瑶湖学院 南昌工程学院瑶湖学院" />
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
     <title>瑶湖学院</title>
     <!-- 全部样式 -->
     <link rel="stylesheet" href="reset.css" type="text/css" />
@@ -29,7 +27,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.css" type="text/css" />
 
     <!-- icon font -->
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1905231_5ve43shchg7.css" type="text/css" />
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1905231_5ve43shchg7.css" type="text/css" />
 
     <!--    
     <script src="jquery.kxbdmarquee.js"></script>
@@ -38,9 +36,8 @@
 
 <body>
 
-    <div class='top-head'>
+    <div class='top-head container'>
         <img src='../img/logo.jpg' class="logo" />
-
         <div class="motto">
             <img src='../img/libariry.jpg' />
             <span class="logo-r">修身 明德 博学 天下</span>
@@ -51,7 +48,7 @@
     <div class="nav-bg">
         <!--#begineditable name="网站导航" action="webber.wbst.com.nav.MenuAction" layout="/system/_component/sitenav/tplvnav.jsp" tpltype="1" contype="" clone="" viewid="49339" contentviewid="" tagname="网站导航"-->
         <ul>
-            <li class="navlev on">
+            <li class="navlev">
                 <a href="/system/_owners/yaohuschool/_webprj/index.jsp" target="">首页</a>
             </li>
             <li class="navlev">
@@ -194,6 +191,8 @@
         </ul>
         <!--#endeditable-->
     </div>
+    <script>$(".navlev").eq(0).addClass("on");</script>
+
     <div id="main">
         <div class="bannerBox">
             <div class="banner">
@@ -234,7 +233,7 @@
     </center>
 
 
-    <div id='content'>
+    <div id='content' class="container">
         <center>
             <ul id="myTab" class="nav-tabs-separate">
                 <li role="presentation" class="active"><a aria-controls="news" role="tab" href="#news"

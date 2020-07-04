@@ -4,18 +4,30 @@ html{-webkit-filter: grayscale(100%);-moz-filter: grayscale(100%);-ms-filter: gr
 /*  以上是全站黑白的样式,使用时取消注释即可 */
 /*******************/
 
+@font-face{
+    font-family: '华文行楷';
+    src : url('../font/huawenxingkai.htm');
+}
+
+body{
+    overflow-x: scroll;
+    padding: 0;
+    padding-top: 3rem;
+}
+
 .top-head{
     width: 100%;
-    height: 32rem;
+    height: 28rem;
 }
 
 .motto{
     display: inline-block;
     position: absolute;
-    top: 2rem;
-    right: 12rem;
-    width: 32rem;
+    /* top: 3rem;
+    right: 8em; */
+    width: 28rem;
     height: auto;
+    margin: 0rem 3rem auto 10rem;
 }
 
 .motto img{
@@ -40,20 +52,25 @@ html{-webkit-filter: grayscale(100%);-moz-filter: grayscale(100%);-ms-filter: gr
 a{
     text-decoration: none;
 }
-.logo {margin:12rem;}
+.logo {margin:10rem;display: inline-block;}
 .eng { position:absolute; right:0px; top:10px; line-height:20px; color:#9d9d9d;}
 .eng a { color:#9d9d9d; margin:0 6px;}
 .eng a:hover { text-decoration:underline; color:#666;}
-.nav-bg { height:43px; background:url(../img/nav-bg.jpg) repeat-x;}
-.nav-bg ul { width:1000px; margin:0 auto; height:43px; position:relative;}
-.nav-bg ul li { float:left; height:43px; width:100px; background:url(../images/line-n.jpg) right center no-repeat; text-align:center;  line-height:43px; font-size:16px; }
+.nav-bg { z-index: 5; height:43px; background:url(../img/nav-bg.jpg) repeat-x;}
+.nav-bg ul {width:1000px; margin:0 auto; height:43px; position:relative;}
+.nav-bg ul li {  z-index: 5; float:left; height:43px; width:100px; background:url(../images/line-n.jpg) right center no-repeat; text-align:center;  line-height:43px; font-size:16px; }
 .nav-bg ul li a { color:#ffffff; padding:5px 0 0 0; display:block; height:43px; position:relative; top:-5px; }
-.nav-bg ul li.hover, .nav-bg ul li.on { background:none;}
 .nav-bg ul li.on a { background:url(../img/nav-2.png) no-repeat;}
-.lev2 { position:absolute;  display:none; left:0px; top:43px; width:1000px; height:38px; line-height:38px; background:#fff; z-index:1000;}
+.lev2 { z-index: -1; position:absolute;left:0px; top:100px;transition: .6s; width:1000px; height:38px; line-height:38px; background:#fff;}
 .lev2-c { overflow:hidden;}
 .lev2-c a { float:left; color:#393939 !important; margin-left:32px; font-size:14px; background:none !important;}
 .lev2-c a:hover { text-decoration:underline;}
+.nav-bg ul li:hover .lev2{
+    position:absolute;left:0px; top:43px;
+    height: 38px;
+    z-index: 5;
+}
+
 /******首页轮播************/
 
 
@@ -129,7 +146,6 @@ a{
     width: 90%;
     margin: 2rem auto 2rem auto;
     padding: 0 3rem 3rem 3rem;
-    border: 2px solid #0a4279;
     border-radius: 2rem;
 }
 
@@ -142,9 +158,9 @@ a{
     margin-bottom: 1rem;
 }
 
-.tab-content .news-ul li{
+.tab-content .news-ul li, .tab-content .dt-ul li{
     margin: 0px;
-    padding: 10px 0 10px 5px;
+    padding: 10px 0 10px 20px;
     border-bottom: 1px dashed #0287c0;
 }
 
