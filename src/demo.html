@@ -4,31 +4,44 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="description"
-        content="南昌工程学院瑶湖学院成立于2014年8月，校长金志农亲自兼任院长，实行教 授治教。瑶湖学院设于教学南大楼五楼，内部环境雅致、温馨，营造出“现代、 开放”的浓郁氛围。" />
+    <meta name="description" content="南昌工程学院瑶湖学院成立于2014年8月，校长金志农亲自兼任院长，实行教 授治教。瑶湖学院设于教学南大楼五楼，内部环境雅致、温馨，营造出“现代、 开放”的浓郁氛围。" />
     <meta name="keywords" content="瑶湖学院 瑶湖学院 南昌工程学院瑶湖学院" />
     <title>瑶湖学院</title>
     <!-- 全部样式 -->
     <link rel="stylesheet" href="assets/css/reset.css" type="text/css" />
+    <link href="assets/css/css.css" rel="stylesheet" type="text/css" />
     <!-- 重置样式 -->
     <link href="assets/css/pic.css" rel="stylesheet" type="text/css" />
-    <!-- 相册样式 -->
-
-    <link href="assets/css/css.css" rel="stylesheet" type="text/css" />
-
     <!-- 轮播相关文件 -->
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
     <script src='https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
-    <link rel="stylesheet" href="assets/css/powerpoint.css" type="text/css" />
-    <script src="assets/js/powerpoint.js"></script>
-
+    <link rel="stylesheet" href="assets/css/lb.css" type="text/css" />
+    <script src="assets/js/lb.js"></script>
+    <script>
+        window.onload = function() {
+            // 轮播选项
+            const options = {
+                id: 'lb-1', // 轮播盒ID
+                speed: 600, // 轮播速度(ms)
+                delay: 10000, // 轮播延迟(ms)
+                direction: 'left', // 图片滑动方向
+                moniterKeyEvent: true, // 是否监听键盘事件
+                moniterTouchEvent: true // 是否监听屏幕滑动事件
+            }
+            const lb = new Lb(options);
+            lb.start();
+        }
+    </script>
+    <!-- 相册样式 -->
+    <link href="assets/css/blueimp-gallery.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/set.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <script src="assets/js/jquery.blueimp-gallery.min.js"></script>
     <!-- 视频播放器相关库 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.css" type="text/css" />
-
     <!-- icon font -->
     <link rel="stylesheet" href="https://at.alicdn.com/t/font_1905231_jho8pdv6bbm.css" type="text/css" />
-
 
     <!--    
     <script src="jquery.kxbdmarquee.js"></script>
@@ -53,159 +66,153 @@
                 <a href="/system/_owners/yaohuschool/_webprj/index.jsp" target="">首页</a>
             </li>
             <li class="navlev">
-                <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1073"
-                    target="">学院概况</a>
+                <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1073" target="">学院概况</a>
                 <div class="lev2">
                     <div class="lev2-c">
-                        <a href="/system/_owners/yaohuschool/_webprj/content.jsp?urltype=news.NewsContentUrl&wbtreeid=1073&wbnewsid=1002"
-                            target="">学院简介</a>
-                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1083"
-                            target="">学院领导</a>
-                        <a href="/system/_owners/yaohuschool/_webprj/content.jsp?urltype=news.NewsContentUrl&wbtreeid=1073&wbnewsid=1013"
-                            target="">组织机构</a>
-                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1085"
-                            target="">学院荣誉</a>
-                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1086"
-                            target="">杰出院友</a>
-                        <a href="/system/_owners/yaohuschool/_webprj/content.jsp?urltype=news.NewsContentUrl&wbtreeid=1073&wbnewsid=1012"
-                            target="">联系我们</a>
+                        <a href="/system/_owners/yaohuschool/_webprj/content.jsp?urltype=news.NewsContentUrl&wbtreeid=1073&wbnewsid=1002" target="">学院简介</a>
+                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1083" target="">学院领导</a>
+                        <a href="/system/_owners/yaohuschool/_webprj/content.jsp?urltype=news.NewsContentUrl&wbtreeid=1073&wbnewsid=1013" target="">组织机构</a>
+                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1085" target="">学院荣誉</a>
+                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1086" target="">杰出院友</a>
+                        <a href="/system/_owners/yaohuschool/_webprj/content.jsp?urltype=news.NewsContentUrl&wbtreeid=1073&wbnewsid=1012" target="">联系我们</a>
                         <a href="<span style='color:red;font-size:9pt'>转换链接错误</span>" target="">招生简章</a>
                     </div>
                 </div>
             </li>
             <li class="navlev">
-                <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1074"
-                    target="">新闻动态</a>
+                <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1074" target="">新闻动态</a>
                 <div class="lev2">
                     <div class="lev2-c">
-                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1088"
-                            target="">通知公告</a>
-                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1089"
-                            target="">综合新闻</a>
-                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1090"
-                            target="">学院动态</a>
-                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1091"
-                            target="">讲座信息</a>
+                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1088" target="">通知公告</a>
+                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1089" target="">综合新闻</a>
+                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1090" target="">学院动态</a>
+                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1091" target="">讲座信息</a>
                     </div>
                 </div>
             </li>
             <li class="navlev">
-                <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1075"
-                    target="">师资队伍</a>
+                <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1075" target="">师资队伍</a>
                 <div class="lev2">
                     <div class="lev2-c">
-                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1092"
-                            target="">任课教师</a>
-                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1093"
-                            target="">专业导师</a>
-                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1094"
-                            target="">学业导师</a>
+                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1092" target="">任课教师</a>
+                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1093" target="">专业导师</a>
+                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1094" target="">学业导师</a>
                     </div>
                 </div>
             </li>
             <li class="navlev">
-                <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1076"
-                    target="">教育教学</a>
+                <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1076" target="">教育教学</a>
                 <div class="lev2">
                     <div class="lev2-c">
-                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1095"
-                            target="">培养方案</a>
-                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1096"
-                            target="">课程安排</a>
-                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1097"
-                            target="">学业评价</a>
-                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1098"
-                            target="">教改研究</a>
+                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1095" target="">培养方案</a>
+                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1096" target="">课程安排</a>
+                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1097" target="">学业评价</a>
+                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1098" target="">教改研究</a>
                     </div>
                 </div>
             </li>
             <li class="navlev">
-                <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1077"
-                    target="">科学研究</a>
+                <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1077" target="">科学研究</a>
                 <div class="lev2">
                     <div class="lev2-c">
-                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1099"
-                            target="">学术活动</a>
-                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1100"
-                            target="">科研训练</a>
-                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1101"
-                            target="">科技竞赛</a>
-                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1102"
-                            target="">科研成果</a>
+                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1099" target="">学术活动</a>
+                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1100" target="">科研训练</a>
+                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1101" target="">科技竞赛</a>
+                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1102" target="">科研成果</a>
                     </div>
                 </div>
             </li>
             <li class="navlev">
-                <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1078"
-                    target="">学生管理</a>
+                <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1078" target="">学生管理</a>
                 <div class="lev2">
                     <div class="lev2-c">
-                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1103"
-                            target="">招生信息</a>
-                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1104"
-                            target="">评奖评优</a>
-                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1105"
-                            target="">勤工助学</a>
-                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1106"
-                            target="">困难资助</a>
-                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1107"
-                            target="">心理健康</a>
+                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1103" target="">招生信息</a>
+                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1104" target="">评奖评优</a>
+                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1105" target="">勤工助学</a>
+                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1106" target="">困难资助</a>
+                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1107" target="">心理健康</a>
                     </div>
                 </div>
             </li>
             <li class="navlev">
-                <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1079"
-                    target="">党团建设</a>
+                <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1079" target="">党团建设</a>
                 <div class="lev2">
                     <div class="lev2-c">
-                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1108"
-                            target="">党建工作</a>
-                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1109"
-                            target="">团建工作</a>
-                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1110"
-                            target="">学生会</a>
+                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1108" target="">党建工作</a>
+                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1109" target="">团建工作</a>
+                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1110" target="">学生会</a>
                     </div>
                 </div>
             </li>
             <li class="navlev">
-                <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1080"
-                    target="">对外交流</a>
+                <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1080" target="">对外交流</a>
                 <div class="lev2">
                     <div class="lev2-c">
-                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1111"
-                            target="">交流动态</a>
-                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1112"
-                            target="">国际合作</a>
+                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1111" target="">交流动态</a>
+                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1112" target="">国际合作</a>
                     </div>
                 </div>
             </li>
             <li class="navlev">
-                <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1081"
-                    target="">资源下载</a>
+                <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1081" target="">资源下载</a>
                 <div class="lev2">
                     <div class="lev2-c">
-                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1113"
-                            target="">文件汇编</a>
+                        <a href="/system/_owners/yaohuschool/_webprj/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1113" target="">文件汇编</a>
                     </div>
                 </div>
             </li>
         </ul>
         <!--#endeditable-->
     </div>
-    <script>$(".navlev").eq(0).addClass("on");</script>
+    <script>
+        $(".navlev").eq(0).addClass("on");
+    </script>
 
-    <div id="main">
-        <div class="bannerBox">
-            <div class="banner">
-                <ul>
-                    <li><img src="assets/images//1.jpg" /></li>
-                    <li><img src="assets/images/2.jpg" /></li>
-                    <li><img src="assets/images/3.jpg" /></li>
-                    <li><img src="assets/images/4.jpg" /></li>
-                    <li><img src="assets/images/5.jpg" /></li>
-                </ul>
+    <div class="lb-box" id="lb-1">
+        <!-- 轮播内容 -->
+        <div class="lb-content">
+            <div class="lb-item active">
+                <a href="#">
+                    <img src="assets/images/1.jpg" alt="瑶湖学院欢迎您！">
+                    <span>瑶湖学院欢迎您！</span>
+                </a>
+            </div>
+            <div class="lb-item">
+                <a href="#">
+                    <img src="assets/images/2.jpg" alt="瑶湖学院导师颁奖仪式">
+                    <span>瑶湖学院导师颁奖仪式</span>
+                </a>
+            </div>
+            <div class="lb-item">
+                <a href="#">
+                    <img src="assets/images/3.jpg" alt="瑶湖学院个性化课程培养">
+                    <span>瑶湖学院个性化课程培养</span>
+                </a>
+            </div>
+            <div class="lb-item">
+                <a href="#">
+                    <img src="assets/images/4.jpg" alt="瑶湖学院个性化课程培养">
+                    <span>瑶湖学院个性化课程培养</span>
+                </a>
+            </div>
+            <div class="lb-item">
+                <a href="#">
+                    <img src="assets/images/5.jpg" alt="瑶湖学院大家庭">
+                    <span>瑶湖学院大家庭</span>
+                </a>
             </div>
         </div>
+        <!-- 轮播标志 -->
+        <ol class="lb-sign">
+            <li class="active">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ol>
+        <!-- 轮播控件 -->
+        <div class="lb-ctrl lb-left">＜</div>
+        <div class="lb-ctrl lb-right">＞</div>
     </div>
 
     <hr style="height:5px;border:none;border-top:5px solid #1b60a4;margin: 0px 15px 0 15px;" />
@@ -237,19 +244,15 @@
     <div id='content' class="container">
         <center>
             <ul id="myTab" class="nav-tabs-separate">
-                <li role="presentation" class="active"><a aria-controls="news" role="tab" href="#news"
-                        data-toggle="tab">综合新闻</a></li>
+                <li role="presentation" class="active"><a aria-controls="news" role="tab" href="#news" data-toggle="tab">综合新闻</a></li>
                 <span>|</span>
-                <li role="presentation"><a href="#activities" aria-controls="activities" role="tab"
-                        data-toggle="tab">学院动态</a>
+                <li role="presentation"><a href="#activities" aria-controls="activities" role="tab" data-toggle="tab">学院动态</a>
                 </li>
                 <span>|</span>
-                <li role="presentation"><a href="#notifies" aria-controls="notifies" role="tab"
-                        data-toggle="tab">通知公告</a>
+                <li role="presentation"><a href="#notifies" aria-controls="notifies" role="tab" data-toggle="tab">通知公告</a>
                 </li>
                 <span>|</span>
-                <li role="presentation"><a href="#academics" aria-controls="academics" role="tab"
-                        data-toggle="tab">讲座信息</a>
+                <li role="presentation"><a href="#academics" aria-controls="academics" role="tab" data-toggle="tab">讲座信息</a>
                 </li>
             </ul>
         </center>
@@ -260,29 +263,44 @@
                 <div class="title">综合新闻</div>
                 <hr style="height:5px;border:none;border-top:5px solid #1b60a4;margin:0;" />
                 <ul class="news-ul">
-                    <li><EM>1</EM><a href="">网站群管理平台</A><SPAN class="jsC_DateTime" datetime="1">2013-01-01 00:00</SPAN>
+                    <li>
+                        <EM>1</EM><a href="">网站群管理平台</A>
+                        <SPAN class="jsC_DateTime" datetime="1">2013-01-01 00:00</SPAN>
                     </li>
 
-                    <li><EM>2</EM><a href="">跨平台支持</A><SPAN class="jsC_DateTime" datetime="1">2013-01-01 00:00</SPAN>
+                    <li>
+                        <EM>2</EM><a href="">跨平台支持</A>
+                        <SPAN class="jsC_DateTime" datetime="1">2013-01-01 00:00</SPAN>
                     </li>
 
-                    <li><EM>3</EM><a href="">创建网站很简单</A><SPAN class="jsC_DateTime" datetime="1">2013-01-01 00:00</SPAN>
+                    <li>
+                        <EM>3</EM><a href="">创建网站很简单</A>
+                        <SPAN class="jsC_DateTime" datetime="1">2013-01-01 00:00</SPAN>
                     </li>
 
-                    <li><EM>4</EM><a href="">安全高效的运行</A><SPAN class="jsC_DateTime" datetime="1">2013-01-01 00:00</SPAN>
+                    <li>
+                        <EM>4</EM><a href="">安全高效的运行</A>
+                        <SPAN class="jsC_DateTime" datetime="1">2013-01-01 00:00</SPAN>
                     </li>
 
-                    <li><EM>5</EM><a href="">文章支持一键排版</A><SPAN class="jsC_DateTime" datetime="1">2013-01-01 00:00</SPAN>
+                    <li>
+                        <EM>5</EM><a href="">文章支持一键排版</A>
+                        <SPAN class="jsC_DateTime" datetime="1">2013-01-01 00:00</SPAN>
                     </li>
 
-                    <li><EM>6</EM><a href="">提供智能静态发布功能</A><SPAN class="jsC_DateTime"
-                            datetime="1">2013-01-0100:00</SPAN>
+                    <li>
+                        <EM>6</EM><a href="">提供智能静态发布功能</A>
+                        <SPAN class="jsC_DateTime" datetime="1">2013-01-0100:00</SPAN>
                     </li>
 
-                    <li><EM>7</EM><a href="">自动转换视频格式</A><SPAN class="jsC_DateTime" datetime="1">2013-01-01 00:00</SPAN>
+                    <li>
+                        <EM>7</EM><a href="">自动转换视频格式</A>
+                        <SPAN class="jsC_DateTime" datetime="1">2013-01-01 00:00</SPAN>
                     </li>
 
-                    <li><EM>8</EM><a href="">高效的管理一群网站</A><SPAN class="jsC_DateTime" datetime="1">2013-01-01
+                    <li>
+                        <EM>8</EM><a href="">高效的管理一群网站</A>
+                        <SPAN class="jsC_DateTime" datetime="1">2013-01-01
                             00:00</SPAN>
                     </li>
 
@@ -331,19 +349,34 @@
                 <div class="title">通知公告</div>
                 <hr style="height:5px;border:none;border-top:5px solid #1b60a4;margin:0;" />
                 <ul class="news-ul">
-                    <li><EM>1</EM><A href=""> 网站群管理平台</A><SPAN class="jsC_DateTime" DateTime="1">2013-01-01 00:00</SPAN>
+                    <li>
+                        <EM>1</EM>
+                        <A href=""> 网站群管理平台</A>
+                        <SPAN class="jsC_DateTime" DateTime="1">2013-01-01 00:00</SPAN>
                     </li>
 
-                    <li><EM>2</EM><A href=""> 跨平台支持</A><SPAN class="jsC_DateTime" DateTime="1">2013-01-01 00:00</SPAN>
+                    <li>
+                        <EM>2</EM>
+                        <A href=""> 跨平台支持</A>
+                        <SPAN class="jsC_DateTime" DateTime="1">2013-01-01 00:00</SPAN>
                     </li>
 
-                    <li><EM>3</EM><A href=""> 创建网站很简单</A><SPAN class="jsC_DateTime" DateTime="1">2013-01-01 00:00</SPAN>
+                    <li>
+                        <EM>3</EM>
+                        <A href=""> 创建网站很简单</A>
+                        <SPAN class="jsC_DateTime" DateTime="1">2013-01-01 00:00</SPAN>
                     </li>
 
-                    <li><EM>4</EM><A href=""> 安全高效的运行</A><SPAN class="jsC_DateTime" DateTime="1">2013-01-01 00:00</SPAN>
+                    <li>
+                        <EM>4</EM>
+                        <A href=""> 安全高效的运行</A>
+                        <SPAN class="jsC_DateTime" DateTime="1">2013-01-01 00:00</SPAN>
                     </li>
 
-                    <li><EM>5</EM><A href=""> 文章支持一键排版</A><SPAN class="jsC_DateTime" DateTime="1">2013-01-01
+                    <li>
+                        <EM>5</EM>
+                        <A href=""> 文章支持一键排版</A>
+                        <SPAN class="jsC_DateTime" DateTime="1">2013-01-01
                             00:00</SPAN>
                     </li>
                 </ul>
@@ -355,7 +388,8 @@
                 <div class="title" style="margin-top:14px;">讲座信息</div>
                 <hr style="height:5px;border:none;border-top:5px solid #1b60a4;margin:0;" />
                 <ul class="jz-ul">
-                    <li><a href="">
+                    <li>
+                        <a href="">
                             <div class="date"><span class="jsC_DateTime" DateTime="4">2013年01月01日</span>
                             </div>
                             <p>网站群管理平台</p>
@@ -366,7 +400,7 @@
             </div>
         </div>
         <script>
-            $('#myTabs a').click(function (e) {
+            $('#myTabs a').click(function(e) {
                 e.preventDefault()
                 $(this).tab('show')
             })
@@ -380,89 +414,90 @@
         <img src='assets/images/before.png' class="before" />
     </div>
 
-    <div class='head'>
-        <span class='pre-block'></span>
-        <div class="main-title">
-            <p class="h3 h3-block">花草物语</p>
-            <p class="h4 h4-block">Flowers language</p>
-        </div>
-        <div class="sub-title">
-            <p class="h4">春花为我飘香</p>
-            <br />
-            <p class="h4">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;夏草为我写诗
-            </p>
-        </div>
+
+    <!-- 相册 -->
+    <div id="works" class=" clearfix grid">
+        <figure class="effect-oscar  wowload fadeIn">
+            <img src="assets/gallary/1.jpg" alt="img01" />
+            <figcaption>
+                <h2>Nature</h2>
+                <p>Lily likes to play with crayons and pencils<br>
+                    <a href="assets/gallary/1.jpg" title="1" data-gallery>Details</a></p>
+            </figcaption>
+        </figure>
+        <figure class="effect-oscar  wowload fadeInUp">
+            <img src="assets/gallary/2.jpg" alt="img01" />
+            <figcaption>
+                <h2>Events</h2>
+                <p>Lily likes to play with crayons and pencils<br>
+                    <a href="assets/gallary/2.jpg" title="1" data-gallery>Details</a></p>
+            </figcaption>
+        </figure>
+        <figure class="effect-oscar  wowload fadeInUp">
+            <img src="assets/gallary/3.jpg" alt="img01" />
+            <figcaption>
+                <h2>music</h2>
+                <p>Lily likes to play with crayons and pencils<br>
+                    <a href="assets/gallary/3.jpg" title="1" data-gallery>Details</a></p>
+            </figcaption>
+        </figure>
+        <figure class="effect-oscar  wowload fadeInUp">
+            <img src="assets/gallary/4.jpg" alt="img01" />
+            <figcaption>
+                <h2>Vintage</h2>
+                <p>Lily likes to play with crayons and pencils<br>
+                    <a href="assets/gallary/4.jpg" title="1" data-gallery>Details</a></p>
+            </figcaption>
+        </figure>
+        <figure class="effect-oscar  wowload fadeInUp">
+            <img src="assets/gallary/5.jpg" alt="img01" />
+            <figcaption>
+                <h2>Typers</h2>
+                <p>Lily likes to play with crayons and pencils<br>
+                    <a href="assets/gallary/5.jpg" title="1" data-gallery>Details</a></p>
+            </figcaption>
+        </figure>
+
+        <figure class="effect-oscar  wowload fadeInUp">
+            <img src="assets/gallary/6.jpg" alt="img01" />
+            <figcaption>
+                <h2>hotel</h2>
+                <p>Lily likes to play with crayons and pencils<br>
+                    <a href="assets/gallary/6.jpg" title="1" data-gallery>Details</a></p>
+            </figcaption>
+        </figure>
+        <figure class="effect-oscar  wowload fadeInUp">
+            <img src="assets/gallary/7.jpg" alt="img01" />
+            <figcaption>
+                <h2>Chinese</h2>
+                <p>Lily likes to play with crayons and pencils<br>
+                    <a href="assets/gallary/7.jpg" title="1" data-gallery>Details</a></p>
+            </figcaption>
+        </figure>
+        <figure class="effect-oscar  wowload fadeInUp">
+            <img src="assets/gallary/8.jpg" alt="img01" />
+            <figcaption>
+                <h2>Dicrap</h2>
+                <p>Lily likes to play with crayons and pencils<br>
+                    <a href="assets/gallary/8.jpg" title="1" data-gallery>Details</a></p>
+            </figcaption>
+        </figure>
+        <figure class="effect-oscar  wowload fadeInUp">
+            <img src="assets/gallary/9.jpg" alt="img01" />
+            <figcaption>
+                <h2>Coffee</h2>
+                <p>Lily likes to play with crayons and pencils<br>
+                    <a href="assets/gallary/9.jpg" title="1" data-gallery>Details</a></p>
+            </figcaption>
+        </figure>
     </div>
 
-    <div class="photo-wall container">
-        <div class='photo-fill' style="width: 30%;height: 320px;">
-            <img src="assets/images/wall1.jpg" class='photo' />
-            <div class='mask'>
-                <p class='h3'>爬山虎</p>
-                <hr style="height: 1px;border-top: 1px solid white;">
-                <p class="description">这是应该会有一段长长的描述.</p>
-            </div>
-        </div>
-
-        <div class='photo-fill' style="width: 30%;height: 400px;top: 80px;">
-            <img src="assets/images/wall1.jpg" class='photo' />
-            <div class='mask'>
-                <p class='h3'>爬山虎</p>
-                <hr style="height: 1px;border-top: 1px solid white;">
-                <p class="description">这是应该会有一段长长的描述.</p>
-            </div>
-        </div>
-
-        <div class='photo-fill' style="width: 30%;height: 320px;">
-            <img src="assets/images/wall1.jpg" class='photo' />
-            <div class='mask'>
-                <p class='h3'>爬山虎</p>
-                <hr style="height: 1px;border-top: 1px solid white;">
-                <p class="description">这是应该会有一段长长的描述.</p>
-            </div>
-        </div>
-
-        <div class='photo-fill' style="width: 30%;height: 320px;">
-            <img src="assets/images/wall1.jpg" class='photo' />
-            <div class='mask'>
-                <p class='h3'>爬山虎</p>
-                <hr style="height: 1px;border-top: 1px solid white;">
-                <p class="description">这是应该会有一段长长的描述.</p>
-            </div>
-        </div>
-
-        <div class='photo-fill' style="width: 30%;height: 240px;">
-            <img src="assets/images/wall1.jpg" class='photo' />
-            <div class='mask'>
-                <p class='h3'>爬山虎</p>
-                <hr style="height: 1px;border-top: 1px solid white;">
-                <p class="description">这是应该会有一段长长的描述.</p>
-            </div>
-        </div>
-
-        <div class='photo-fill' style="width: 30%;height: 320px;">
-            <img src="assets/images/wall1.jpg" class='photo' />
-            <div class='mask'>
-                <p class='h3'>爬山虎</p>
-                <hr style="height: 1px;border-top: 1px solid white;">
-                <p class="description">这是应该会有一段长长的描述.</p>
-            </div>
-        </div>
-    </div>
 
 
     <!-- 下面是视频宣传片,采用dplayer播放器 -->
     <script src='https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js'></script>
-    <div class='head'>
-        <span class='pre-block'></span>
-        <div class="main-title">
-            <p class="h3 h3-block">奔跑着的我们</p>
-            <p class="h4 h4-block">We are running on the road</p>
-        </div>
-    </div>
 
-    <div class="video-block container">
+    <div class="video-block">
         <div class='video-fill'>
             <div id="dplayer1" class="dp"></div>
             <div class="description">视频1--<small>这里是小字说明</small></div>
@@ -474,55 +509,120 @@
     </div>
     <script src='assets/js/dplayer.js'></script>
 
-
-    <div class='head'>
-        <span class='pre-block'></span>
-        <div class="main-title">
-            <p class="h3 h3-block">我们是春的明媚，秋的丰饶</p>
-            <p class="h4 h4-block">We are beautiful as Spring and Autumn</p>
-        </div>
-    </div>
-
-    <div class="show-wall container">
-        <div class="show-fill">
-            <img src='assets/images/school.jpg' />
-            <div class="description">瑶湖私塾第一期</div>
-        </div>
-
-        <div class="show-fill">
-            <img src='assets/images/school.jpg' />
-            <div class="description">瑶湖私塾第一期</div>
-        </div>
-        <div class="show-fill">
-            <img src='assets/images/school.jpg' />
-            <div class="description">瑶湖私塾第一期</div>
-        </div>
-        <div class="show-fill">
-            <img src='assets/images/school.jpg' />
-            <div class="description">瑶湖私塾第一期</div>
-        </div>
-    </div>
-
-
-    <div id='links' class='links-block'>
+    <!-- 友情链接 -->
+    <div id='links'>
         <div class="container">
-            <div class='links-title'>
-                友情链接:
+            <div class="row link-title">
+                <h3>友情链接</h3>
+                <hr />
             </div>
-            <div class='links'>
-                <div class="card">
-                    <a href="https://eatrice.top/" class="card-body hover-with-bg" target="_blank" rel="noopener">
-                        <img src="https://yuanpei.pku.edu.cn/images/footer-logo.png" srcset="https://yuanpei.pku.edu.cn/images/footer-logo.png"
-                            alt="北京大学元培学院">
-                        <div class="link-title">北京大学元培学院</div>
+            <div class="row links">
+                <div class="card col-lg-4 col-md-6 col-sm-12">
+                    <a href="https://eatrice.top" class="card-body hover-with-bg" target="_blank" rel="noopener">
+                        <div class="card-content">
+                            <div class="link-avatar my-auto">
+                                <img src="https://eatrice.top/img/favcion.png" alt="吃白饭的休伯利安号" />
+                            </div>
+                            <div class="link-text">
+                                <div class="link-title h4">吃白饭的休伯利安号</div>
+                            </div>
+                        </div>
                     </a>
                 </div>
-
-                <div class="card">
-                    <a href="https://eatrice.top/" class="card-body hover-with-bg" target="_blank" rel="noopener">
-                        <img src="https://eatrice.top/img/favcion.png" srcset="https://eatrice.top/img/favcion.png"
-                            alt="吃白饭的休伯利安号">
-                        <div class="link-title">吃白饭的休伯利安号</div>
+                <div class="card col-lg-4 col-md-6 col-sm-12">
+                    <a href="https://eatrice.top" class="card-body hover-with-bg" target="_blank" rel="noopener">
+                        <div class="card-content">
+                            <div class="link-avatar my-auto">
+                                <img src="https://eatrice.top/img/favcion.png" alt="吃白饭的休伯利安号" />
+                            </div>
+                            <div class="link-text">
+                                <div class="link-title h4">吃白饭的休伯利安号</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card col-lg-4 col-md-6 col-sm-12">
+                    <a href="https://eatrice.top" class="card-body hover-with-bg" target="_blank" rel="noopener">
+                        <div class="card-content">
+                            <div class="link-avatar my-auto">
+                                <img src="https://eatrice.top/img/favcion.png" alt="吃白饭的休伯利安号" />
+                            </div>
+                            <div class="link-text">
+                                <div class="link-title h4">吃白饭的休伯利安号</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card col-lg-4 col-md-6 col-sm-12">
+                    <a href="https://eatrice.top" class="card-body hover-with-bg" target="_blank" rel="noopener">
+                        <div class="card-content">
+                            <div class="link-avatar my-auto">
+                                <img src="https://eatrice.top/img/favcion.png" alt="吃白饭的休伯利安号" />
+                            </div>
+                            <div class="link-text">
+                                <div class="link-title h4">吃白饭的休伯利安号</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card col-lg-4 col-md-6 col-sm-12">
+                    <a href="https://eatrice.top" class="card-body hover-with-bg" target="_blank" rel="noopener">
+                        <div class="card-content">
+                            <div class="link-avatar my-auto">
+                                <img src="https://eatrice.top/img/favcion.png" alt="吃白饭的休伯利安号" />
+                            </div>
+                            <div class="link-text">
+                                <div class="link-title h4">吃白饭的休伯利安号</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card col-lg-4 col-md-6 col-sm-12">
+                    <a href="https://eatrice.top" class="card-body hover-with-bg" target="_blank" rel="noopener">
+                        <div class="card-content">
+                            <div class="link-avatar my-auto">
+                                <img src="https://eatrice.top/img/favcion.png" alt="吃白饭的休伯利安号" />
+                            </div>
+                            <div class="link-text">
+                                <div class="link-title h4">吃白饭的休伯利安号</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card col-lg-4 col-md-6 col-sm-12">
+                    <a href="https://eatrice.top" class="card-body hover-with-bg" target="_blank" rel="noopener">
+                        <div class="card-content">
+                            <div class="link-avatar my-auto">
+                                <img src="https://eatrice.top/img/favcion.png" alt="吃白饭的休伯利安号" />
+                            </div>
+                            <div class="link-text">
+                                <div class="link-title h4">吃白饭的休伯利安号</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card col-lg-4 col-md-6 col-sm-12">
+                    <a href="https://eatrice.top" class="card-body hover-with-bg" target="_blank" rel="noopener">
+                        <div class="card-content">
+                            <div class="link-avatar my-auto">
+                                <img src="https://eatrice.top/img/favcion.png" alt="吃白饭的休伯利安号" />
+                            </div>
+                            <div class="link-text">
+                                <div class="link-title h4">吃白饭的休伯利安号</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card col-lg-4 col-md-6 col-sm-12">
+                    <a href="https://eatrice.top" class="card-body hover-with-bg" target="_blank" rel="noopener">
+                        <div class="card-content">
+                            <div class="link-avatar my-auto">
+                                <img src="https://eatrice.top/img/favcion.png" alt="吃白饭的休伯利安号" />
+                            </div>
+                            <div class="link-text">
+                                <div class="link-title h4">吃白饭的休伯利安号</div>
+                            </div>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -542,8 +642,7 @@
             <img class="f-wei" src="assets/images/f-wei.jpg">
         </div>
     </div>
-    <div class="foot"> - <a href="#" target="" style="color:#a2b6d2;">联系我们</a> - <a href="#" target=""
-            style="color:#a2b6d2;">网站地图</a> </div>
+    <div class="foot"> - <a href="/system/go.jsp?treeid=1073&apptype=content&urltype=news.NewsContentUrl&param=wbnewsid%3D1012" target="" style="color:#a2b6d2;">联系我们</a> - <a href="http://nitadmin.nit.edu.cn:8080/system/login.jsp?tdsourcetag=s_pctim_aiomsg" target="" style="color:#a2b6d2;">&copy; 2020 - 南昌工程学院瑶湖学院</a>        </div>
 
 </body>
 
